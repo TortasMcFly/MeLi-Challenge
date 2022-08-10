@@ -1,7 +1,8 @@
-package com.hector.melichallenge
+package com.hector.melichallenge.presentation
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.hector.melichallenge.R
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

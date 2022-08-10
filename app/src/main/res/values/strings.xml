@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">MeLiChallenge</string>
+    <string name="app_name" translatable="false">MeLiChallenge</string>
+    <string name="text_label_search_hint">Search in Mercado Libre</string>
 </resources>
