@@ -14,7 +14,10 @@ class ProductRepositoryImpl(
     private val api: MeLiApi
 ): ProductRepository {
 
-    override suspend fun searchProduct(query: String, offset: Int): Flow<Resource<SearchDetail>> = flow {
+    override suspend fun searchProduct(
+        query: String,
+        offset: Int
+    ): Flow<Resource<SearchDetail>> = flow {
 
         emit(Resource.Loading())
 
