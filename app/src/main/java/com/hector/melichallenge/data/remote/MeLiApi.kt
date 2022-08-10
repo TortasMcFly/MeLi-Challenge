@@ -6,7 +6,7 @@ import retrofit2.http.Query
 
 interface MeLiApi {
 
-    @GET("MLM/search")
+    @GET(RemoteConstants.SEARCH_ENDPOINT)
     suspend fun searchProduct(
         @Query("q") query: String,
         @Query("offset") offset: Int = 0,
