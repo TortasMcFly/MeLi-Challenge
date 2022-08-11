@@ -4,6 +4,7 @@ import com.hector.melichallenge.data.remote.RemoteConstants
 import com.hector.melichallenge.data.remote.MeLiApi
 import com.hector.melichallenge.data.repository.ProductRepositoryImpl
 import com.hector.melichallenge.domain.repository.ProductRepository
+import com.hector.melichallenge.domain.use_case.GetProductDetailUseCase
 import com.hector.melichallenge.domain.use_case.SearchProductUseCase
 import dagger.Module
 import dagger.Provides
@@ -25,6 +26,14 @@ class MeLiModule {
         repository: ProductRepository
     ): SearchProductUseCase {
         return SearchProductUseCase(repository)
+    }
+
+    @Provides
+    @Singleton
+    fun providesGetProductDetailUseCase(
+        repository: ProductRepository
+    ): GetProductDetailUseCase {
+        return GetProductDetailUseCase(repository)
     }
 
     @Provides

@@ -2,6 +2,7 @@ package com.hector.melichallenge.data.repository
 
 import com.hector.melichallenge.data.remote.MeLiApi
 import com.hector.melichallenge.data.remote.dto.toDomain
+import com.hector.melichallenge.domain.model.Product
 import com.hector.melichallenge.domain.model.SearchDetail
 import com.hector.melichallenge.domain.repository.ProductRepository
 import com.hector.melichallenge.domain.util.Resource
@@ -38,6 +39,27 @@ class ProductRepositoryImpl(
             emit(Resource.Error(message = ioException.message ?: "Cannot contact the server"))
         }
 
+    }
+
+    override suspend fun getProductDetail(
+        itemId: String
+    ): Flow<Resource<Product>> = flow {
+
+        emit(Resource.Loading())
+
+        try {
+
+            val result = api.getProductDetail(itemId)
+            val product = result[0]
+
+            emit(Resource.Success(product.body.toDomain()))
+        }
+        catch (httpException: HttpException) {
+            emit(Resource.Error(message = httpException.message()))
+        }
+        catch (ioException: IOException) {
+            emit(Resource.Error(message = ioException.message ?: "Cannot contact the server"))
+        }
     }
 
 }
