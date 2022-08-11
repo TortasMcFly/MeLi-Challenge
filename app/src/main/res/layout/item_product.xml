@@ -28,7 +28,7 @@
                 android:id="@+id/imageViewProduct"
                 android:layout_width="110dp"
                 android:layout_height="110dp"
-                android:background="#bbb"/>
+                android:background="#F6F6F6"/>
         </androidx.cardview.widget.CardView>
 
         <LinearLayout
@@ -43,23 +43,25 @@
                 android:layout_height="wrap_content"
                 android:text="Mattel Star Wars Baby Yoda Peluche"
                 android:textColor="@color/black"
-                android:textSize="@dimen/small_text"/>
+                android:textSize="@dimen/medium_text"/>
 
             <TextView
                 android:id="@+id/textViewPrice"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
                 android:text="$ 799"
                 android:textColor="@color/black"
-                android:textSize="@dimen/nav_header_text"/>
+                android:textSize="@dimen/count_text"/>
 
             <TextView
                 android:id="@+id/textViewInstallments"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
                 android:text="en 12 x $ 81.12"
                 android:textColor="@color/black"
-                android:textSize="@dimen/xxsmall_text"/>
+                android:textSize="@dimen/small_text"/>
 
             <TextView
                 android:id="@+id/textViewFull"
@@ -71,7 +73,7 @@
                 android:layout_marginTop="10dp"
                 android:textColor="#28872C"
                 android:textStyle="bold|italic"
-                android:textSize="@dimen/xsmall_text" />
+                android:textSize="@dimen/small_text" />
 
             <TextView
                 android:id="@+id/textViewSeller"
@@ -79,7 +81,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:text="Vendido por Mattel"
-                android:textSize="@dimen/xxsmall_text"/>
+                android:textSize="@dimen/small_text"/>
 
         </LinearLayout>
 
