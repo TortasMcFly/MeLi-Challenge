@@ -12,9 +12,11 @@ import androidx.navigation.NavController
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.android.material.snackbar.Snackbar
+import com.hector.melichallenge.R
 import com.hector.melichallenge.databinding.FragmentProductsBinding
 import com.hector.melichallenge.domain.model.Product
 import com.hector.melichallenge.presentation.products.adapter.ProductAdapter
+import com.hector.melichallenge.presentation.utils.Constants
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collectLatest
 
@@ -43,6 +45,15 @@ class ProductsFragment : Fragment() {
 
     private fun setUpRecyclerView() {
         val adapter = ProductAdapter(products)
+        adapter.onItemClickListener = { product ->
+            val bundle = Bundle().apply {
+                putString(Constants.NAV_ARGUMENT_PRODUCT_ID, product.id)
+            }
+            navController.navigate(
+                R.id.action_productsFragment_to_productDetailFragment,
+                bundle
+            )
+        }
         val linearLayoutManager = LinearLayoutManager(binding.root.context)
         binding.recyclerView.layoutManager = linearLayoutManager
         binding.recyclerView.adapter = adapter
