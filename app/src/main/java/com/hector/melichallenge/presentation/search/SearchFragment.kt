@@ -5,10 +5,13 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.WindowManager
 import android.widget.SearchView
 import androidx.navigation.NavController
 import androidx.navigation.fragment.findNavController
+import com.hector.melichallenge.R
 import com.hector.melichallenge.databinding.FragmentSearchBinding
+import com.hector.melichallenge.presentation.utils.Constants
 
 class SearchFragment : Fragment() {
 
@@ -36,6 +39,15 @@ class SearchFragment : Fragment() {
             }
 
             override fun onQueryTextSubmit(query: String?): Boolean {
+                if(!query.isNullOrBlank()) {
+                    val bundle = Bundle().apply {
+                        putString(Constants.NAV_ARGUMENT_QUERY_SEARCH, query)
+                    }
+                    navController.navigate(
+                        R.id.action_searchFragment_to_productsFragment,
+                        bundle
+                    )
+                }
                 return false
             }
 
