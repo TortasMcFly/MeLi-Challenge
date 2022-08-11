@@ -43,7 +43,7 @@ class ProductsViewModel @Inject constructor(
     }
 
     private fun searchProduct(query: String, offset: Int) = viewModelScope.launch {
-        searchProductUseCase(query, offset).collectLatest { result ->
+        searchProductUseCase(query, offset).onEach { result ->
             result
                 .onLoading {
                     _state.value = state.value.copy(
@@ -65,7 +65,7 @@ class ProductsViewModel @Inject constructor(
                         UIEvent.ShowError(it ?: "An error occurred")
                     )
                 }
-        }
+        }.launchIn(this)
 
     }
 

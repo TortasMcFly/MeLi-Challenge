@@ -21,7 +21,7 @@ data class Product (
         if(attributes!!.isEmpty()) return null
 
         return attributes!!.map {
-            if(it.isBrand()) "Vendido por ${it.valueName}"
+            if(it.isBrand()) it.valueName
             else ""
         } [0]
     }

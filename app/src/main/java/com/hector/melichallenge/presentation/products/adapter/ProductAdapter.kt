@@ -37,10 +37,10 @@ class ProductAdapter(
 
         @SuppressLint("SetTextI18n")
         fun bind(product: Product) = with(binding) {
-            textViewName.text = "${product.title} ($adapterPosition)"
+            textViewName.text = product.title
             textViewPrice.text = "$ ${product.price}"
             textViewInstallments.text = product.getInstallments() ?: ""
-            textViewSeller.text = product.getBrand() ?: ""
+            textViewSeller.text = if(product.getBrand().isNullOrBlank()) "" else "Vendido por ${product.getBrand()}"
             textViewFull.visibility = if(product.isFullDelivery()) View.VISIBLE else View.INVISIBLE
 
             Glide
