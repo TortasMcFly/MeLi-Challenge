@@ -5,7 +5,9 @@
     android:layout_height="match_parent"
     tools:context=".presentation.search.SearchFragment">
 
-    <include layout="@layout/view_search"/>
+    <include
+        android:id="@+id/viewSearch"
+        layout="@layout/view_search"/>
 
 
 </LinearLayout>

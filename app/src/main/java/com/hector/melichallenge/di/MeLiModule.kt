@@ -5,7 +5,6 @@ import com.hector.melichallenge.data.remote.MeLiApi
 import com.hector.melichallenge.data.repository.ProductRepositoryImpl
 import com.hector.melichallenge.domain.repository.ProductRepository
 import com.hector.melichallenge.domain.use_case.SearchProductUseCase
-import com.hector.melichallenge.domain.use_case.ValidateSearchQueryUseCase
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -26,12 +25,6 @@ class MeLiModule {
         repository: ProductRepository
     ): SearchProductUseCase {
         return SearchProductUseCase(repository)
-    }
-
-    @Provides
-    @Singleton
-    fun providesValidateSearchQueryUseCase(): ValidateSearchQueryUseCase {
-        return ValidateSearchQueryUseCase()
     }
 
     @Provides

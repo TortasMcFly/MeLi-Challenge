@@ -7,7 +7,7 @@
     android:background="@color/colorPrimary">
 
     <SearchView
-        android:id="@+id/idSV"
+        android:id="@+id/searchView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:iconifiedByDefault="false"
