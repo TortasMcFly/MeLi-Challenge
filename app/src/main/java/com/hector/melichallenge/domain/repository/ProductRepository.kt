@@ -1,5 +1,6 @@
 package com.hector.melichallenge.domain.repository
 
+import com.hector.melichallenge.domain.model.Product
 import com.hector.melichallenge.domain.model.SearchDetail
 import com.hector.melichallenge.domain.util.Resource
 import com.hector.melichallenge.domain.util.ValidationResult
@@ -12,4 +13,7 @@ interface ProductRepository {
         offset: Int
     ): Flow<Resource<SearchDetail>>
 
+    suspend fun getProductDetail(
+        itemId: String
+    ): Flow<Resource<Product>>
 }
