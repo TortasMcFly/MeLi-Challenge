@@ -30,7 +30,8 @@ data class ResultDto(
     val thumbnail: String?,
     val thumbnail_id: String?,
     val title: String?,
-    val use_thumbnail_id: Boolean
+    val use_thumbnail_id: Boolean,
+    val pictures: List<ProductPictureDto>? = null
 )
 
 fun ResultDto.toDomain() = Product(
@@ -42,5 +43,6 @@ fun ResultDto.toDomain() = Product(
     thumbnail = thumbnail ?: "",
     installments = installments?.toDomain(),
     shipping = shipping?.toDomain(),
-    attributes = attributes?.map { it.toDomain() }
+    attributes = attributes?.map { it.toDomain() },
+    pictures = pictures?.map { it.toDomain() } ?: emptyList()
 )

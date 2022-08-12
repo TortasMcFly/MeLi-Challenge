@@ -5,5 +5,6 @@ import com.hector.melichallenge.domain.model.Product
 data class ProductDetailState(
     val product: Product? = null,
     val query: String = "",
+    val installments: String = "",
     val loading: Boolean = false
 )

@@ -9,7 +9,8 @@ data class Product (
     var thumbnail: String = "",
     var installments: Installments? = null,
     var shipping: Shipping? = null,
-    var attributes: List<Attribute>? = null
+    var attributes: List<Attribute>? = null,
+    var pictures: List<ProductPicture> = emptyList()
 ) {
 
     fun getInstallments(): String? {
