@@ -38,6 +38,7 @@ class ProductDetailFragment : Fragment() {
         setUpStateFlow()
         setUpEventFlow()
         setUpSearchView()
+        setUpOnClickListeners()
 
         return binding.root
     }
@@ -95,6 +96,13 @@ class ProductDetailFragment : Fragment() {
             if(hasFocus) {
                 navController.popBackStack(R.id.searchFragment, false)
             }
+        }
+    }
+
+    private fun setUpOnClickListeners() {
+        binding.viewSearch.backAction.isVisible = true
+        binding.viewSearch.backAction.setOnClickListener {
+            navController.popBackStack()
         }
     }
 }
