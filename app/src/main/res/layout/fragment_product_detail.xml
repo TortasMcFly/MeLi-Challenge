@@ -26,7 +26,8 @@
                 android:id="@+id/textViewName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="10dp"
+                android:paddingTop="10dp"
+                android:paddingHorizontal="10dp"
                 android:text="..."
                 android:textColor="@color/black"
                 android:textSize="@dimen/large_text" />
@@ -36,7 +37,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:padding="10dp"
+                android:paddingHorizontal="10dp"
                 android:visibility="invisible"
                 tools:visibility="visible">
 
