@@ -26,17 +26,18 @@
                 android:id="@+id/textViewName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingTop="10dp"
+                android:layout_marginTop="10dp"
                 android:paddingHorizontal="10dp"
                 android:text="..."
                 android:textColor="@color/black"
-                android:textSize="@dimen/large_text" />
+                android:textSize="@dimen/header_text" />
 
             <LinearLayout
                 android:id="@+id/viewBrand"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
+                android:layout_marginTop="10dp"
                 android:paddingHorizontal="10dp"
                 android:visibility="invisible"
                 tools:visibility="visible">
@@ -59,6 +60,7 @@
 
 
             <RelativeLayout
+                android:layout_marginTop="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
@@ -83,7 +85,7 @@
 
             <TextView
                 android:id="@+id/textViewPrice"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:padding="10dp"
@@ -93,7 +95,7 @@
 
             <TextView
                 android:id="@+id/textViewInstallments"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:paddingHorizontal="10dp"
