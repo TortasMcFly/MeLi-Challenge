@@ -28,8 +28,10 @@ class ProductDetailViewModel @Inject constructor(
     init {
         val productId = stateHandle.get<String>(Constants.NAV_ARGUMENT_PRODUCT_ID) ?: ""
         val query = stateHandle.get<String>(Constants.NAV_ARGUMENT_QUERY_SEARCH) ?: ""
+        val installments = stateHandle.get<String>(Constants.NAV_ARGUMENT_PRODUCT_INSTALLMENTS) ?: ""
         _state.value = state.value.copy(
-            query = query
+            query = query,
+            installments = installments
         )
         getProductDetail(productId)
     }

@@ -48,6 +48,7 @@ class ProductsFragment : Fragment() {
         adapter.onItemClickListener = { product ->
             val bundle = Bundle().apply {
                 putString(Constants.NAV_ARGUMENT_PRODUCT_ID, product.id)
+                putString(Constants.NAV_ARGUMENT_PRODUCT_INSTALLMENTS, product.getInstallments())
                 putString(Constants.NAV_ARGUMENT_QUERY_SEARCH, binding.viewSearch.searchView.query.toString())
             }
             navController.navigate(

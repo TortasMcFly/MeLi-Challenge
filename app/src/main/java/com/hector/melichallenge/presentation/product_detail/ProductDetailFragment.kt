@@ -1,21 +1,21 @@
 package com.hector.melichallenge.presentation.product_detail
 
-import android.content.Context
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.view.inputmethod.InputMethodManager
 import androidx.core.view.isVisible
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.NavController
 import androidx.navigation.fragment.findNavController
-import com.bumptech.glide.Glide
+import androidx.viewpager2.widget.ViewPager2
 import com.google.android.material.snackbar.Snackbar
 import com.hector.melichallenge.R
 import com.hector.melichallenge.databinding.FragmentProductDetailBinding
+import com.hector.melichallenge.domain.model.ProductPicture
+import com.hector.melichallenge.presentation.product_detail.adapter.ImageViewPagerAdapter
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collectLatest
 
@@ -48,25 +48,19 @@ class ProductDetailFragment : Fragment() {
             binding.content.isVisible = !state.loading
             binding.progressBar.isVisible = state.loading
             binding.viewSearch.searchView.setQuery(state.query, false)
+            binding.textViewInstallments.text = state.installments
 
             state.product?.let { product ->
 
                 binding.textViewName.text = product.title
                 binding.textViewPrice.text = "$ ${product.price}"
-                binding.textViewInstallments.text = product.getInstallments() ?: ""
-
 
                 val hasBrand = !product.getBrand().isNullOrBlank()
                 binding.textViewBrand.text = if(hasBrand) product.getBrand() else ""
                 binding.viewBrand.isVisible = hasBrand
 
                 binding.textViewFull.visibility = if(product.isFullDelivery()) View.VISIBLE else View.INVISIBLE
-
-                Glide
-                    .with(binding.root.context)
-                    .load(product.thumbnail)
-                    .into(binding.imageViewProduct)
-
+                setUpViewPager(product.pictures)
             }
 
         }
@@ -80,8 +74,19 @@ class ProductDetailFragment : Fragment() {
                     Snackbar.make(binding.root, event.message, Snackbar.LENGTH_SHORT).show()
                 }
             }
-
         }
+    }
+
+    private fun setUpViewPager(pictures: List<ProductPicture>) {
+        binding.viewPager.orientation = ViewPager2.ORIENTATION_HORIZONTAL
+        binding.viewPager.adapter = ImageViewPagerAdapter(pictures)
+
+        binding.viewPager.registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback() {
+            override fun onPageSelected(position: Int) {
+                super.onPageSelected(position)
+                binding.textViewPage.text = "${position+1}/${pictures.size}"
+            }
+        })
     }
 
     private fun setUpSearchView() {
