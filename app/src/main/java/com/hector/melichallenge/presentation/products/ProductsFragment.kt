@@ -35,38 +35,13 @@ class ProductsFragment : Fragment() {
         binding = FragmentProductsBinding.inflate(inflater)
         navController = findNavController()
 
-        setUpRecyclerView()
-        setUpSearchView()
         setUpStateFlow()
         setUpEventFlow()
+        setUpRecyclerView()
+        setUpSearchView()
+        setUpOnClickListeners()
 
         return binding.root
-    }
-
-    private fun setUpRecyclerView() {
-        val adapter = ProductAdapter(products)
-        adapter.onItemClickListener = { product ->
-            val bundle = Bundle().apply {
-                putString(Constants.NAV_ARGUMENT_PRODUCT_ID, product.id)
-                putString(Constants.NAV_ARGUMENT_PRODUCT_INSTALLMENTS, product.getInstallments())
-                putString(Constants.NAV_ARGUMENT_QUERY_SEARCH, binding.viewSearch.searchView.query.toString())
-            }
-            navController.navigate(
-                R.id.action_productsFragment_to_productDetailFragment,
-                bundle
-            )
-        }
-        val linearLayoutManager = LinearLayoutManager(binding.root.context)
-        binding.recyclerView.layoutManager = linearLayoutManager
-        binding.recyclerView.adapter = adapter
-    }
-
-    private fun setUpSearchView() {
-        binding.viewSearch.searchView.setOnQueryTextFocusChangeListener { _, hasFocus ->
-            if(hasFocus) {
-                navController.popBackStack()
-            }
-        }
     }
 
     private fun setUpStateFlow() = lifecycleScope.launchWhenStarted {
@@ -98,5 +73,38 @@ class ProductsFragment : Fragment() {
             }
         }
 
+    }
+
+    private fun setUpRecyclerView() {
+        val adapter = ProductAdapter(products)
+        adapter.onItemClickListener = { product ->
+            val bundle = Bundle().apply {
+                putString(Constants.NAV_ARGUMENT_PRODUCT_ID, product.id)
+                putString(Constants.NAV_ARGUMENT_PRODUCT_INSTALLMENTS, product.getInstallments())
+                putString(Constants.NAV_ARGUMENT_QUERY_SEARCH, binding.viewSearch.searchView.query.toString())
+            }
+            navController.navigate(
+                R.id.action_productsFragment_to_productDetailFragment,
+                bundle
+            )
+        }
+        val linearLayoutManager = LinearLayoutManager(binding.root.context)
+        binding.recyclerView.layoutManager = linearLayoutManager
+        binding.recyclerView.adapter = adapter
+    }
+
+    private fun setUpSearchView() {
+        binding.viewSearch.searchView.setOnQueryTextFocusChangeListener { _, hasFocus ->
+            if(hasFocus) {
+                navController.popBackStack()
+            }
+        }
+    }
+
+    private fun setUpOnClickListeners() {
+        binding.viewSearch.backAction.isVisible = true
+        binding.viewSearch.backAction.setOnClickListener {
+            navController.popBackStack()
+        }
     }
 }
