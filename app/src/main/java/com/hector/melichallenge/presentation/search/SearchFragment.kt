@@ -1,13 +1,10 @@
 package com.hector.melichallenge.presentation.search
 
-import android.content.Context
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.view.WindowManager
-import android.view.inputmethod.InputMethodManager
 import android.widget.SearchView
 import androidx.navigation.NavController
 import androidx.navigation.fragment.findNavController
