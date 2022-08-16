@@ -1,0 +1,1406 @@
+{
+  "site_id": "MLM",
+  "country_default_time_zone": "GMT-05:00",
+  "query": "baby yoda",
+  "paging": {
+    "total": 2241,
+    "primary_results": 1000,
+    "offset": 0,
+    "limit": 3
+  },
+  "results": [
+    {
+      "id": "MLM787069257",
+      "site_id": "MLM",
+      "title": "Mattel Star Wars Baby Yoda Peluche",
+      "seller": {
+        "id": 514162196,
+        "permalink": null,
+        "registration_date": null,
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": null
+      },
+      "price": 799,
+      "prices": {
+        "id": "MLM787069257",
+        "prices": [
+          {
+            "id": "22",
+            "type": "standard",
+            "amount": 799,
+            "regular_amount": null,
+            "currency_id": "MXN",
+            "last_updated": "2022-01-11T18:47:10Z",
+            "conditions": {
+              "context_restrictions": [],
+              "start_time": null,
+              "end_time": null,
+              "eligible": true
+            },
+            "exchange_rate_context": "DEFAULT",
+            "metadata": {}
+          }
+        ],
+        "presentation": {
+          "display_currency": "MXN"
+        },
+        "payment_method_prices": [],
+        "reference_prices": [
+          {
+            "id": "139",
+            "type": "min_standard",
+            "conditions": {
+              "context_restrictions": [
+                "channel_marketplace"
+              ],
+              "start_time": null,
+              "end_time": null,
+              "eligible": true
+            },
+            "amount": 799,
+            "currency_id": "MXN",
+            "exchange_rate_context": "DEFAULT",
+            "tags": [],
+            "last_updated": "2022-07-02T04:10:15Z"
+          },
+          {
+            "id": "140",
+            "type": "was",
+            "conditions": {
+              "context_restrictions": [
+                "channel_marketplace"
+              ],
+              "start_time": "2022-07-02T04:10:15Z",
+              "end_time": "2022-07-09T04:10:15Z",
+              "eligible": true
+            },
+            "amount": 599,
+            "currency_id": "MXN",
+            "exchange_rate_context": "DEFAULT",
+            "tags": [],
+            "last_updated": "2022-07-02T04:10:15Z"
+          }
+        ],
+        "purchase_discounts": []
+      },
+      "sale_price": null,
+      "currency_id": "MXN",
+      "available_quantity": 500,
+      "sold_quantity": 5000,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2040-06-14T04:00:00.000Z",
+      "condition": "new",
+      "permalink": "https://articulo.mercadolibre.com.mx/MLM-787069257-mattel-star-wars-baby-yoda-peluche-_JM",
+      "thumbnail": "http://http2.mlstatic.com/D_708357-MLM44976135073_022021-I.jpg",
+      "thumbnail_id": "708357-MLM44976135073_022021",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 12,
+        "amount": 81.12,
+        "rate": 21.83,
+        "currency_id": "MXN"
+      },
+      "address": {
+        "state_id": "MX-MEX",
+        "state_name": "Estado De México",
+        "city_id": "TUxNQ0NVQTMwNDU",
+        "city_name": "Cuautitlan Izcalli"
+      },
+      "shipping": {
+        "free_shipping": true,
+        "mode": "me2",
+        "tags": [
+          "fulfillment",
+          "mandatory_free_shipping"
+        ],
+        "logistic_type": "fulfillment",
+        "store_pick_up": false
+      },
+      "seller_address": {
+        "id": "",
+        "comment": "",
+        "address_line": "",
+        "zip_code": "",
+        "country": {
+          "id": "MX",
+          "name": "Mexico"
+        },
+        "state": {
+          "id": "MX-MEX",
+          "name": "Estado De México"
+        },
+        "city": {
+          "id": "TUxNQ0NVQTMwNDU",
+          "name": "Cuautitlan Izcalli"
+        },
+        "latitude": "",
+        "longitude": ""
+      },
+      "attributes": [
+        {
+          "name": "Marca",
+          "value_name": "Mattel",
+          "value_struct": null,
+          "source": 4060709329251625,
+          "id": "BRAND",
+          "value_id": "1006861",
+          "values": [
+            {
+              "id": "1006861",
+              "name": "Mattel",
+              "struct": null,
+              "source": 4060709329251625
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros"
+        },
+        {
+          "id": "ITEM_CONDITION",
+          "value_struct": null,
+          "source": 1,
+          "values": [
+            {
+              "id": "2230284",
+              "name": "Nuevo",
+              "struct": null,
+              "source": 1
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros",
+          "name": "Condición del ítem",
+          "value_id": "2230284",
+          "value_name": "Nuevo"
+        },
+        {
+          "attribute_group_id": "OTHERS",
+          "source": 8200933948529892,
+          "value_id": null,
+          "value_name": "GWD85",
+          "value_struct": null,
+          "values": [
+            {
+              "source": 8200933948529892,
+              "id": null,
+              "name": "GWD85",
+              "struct": null
+            }
+          ],
+          "id": "MODEL",
+          "name": "Modelo",
+          "attribute_group_name": "Otros"
+        },
+        {
+          "id": "PACKAGE_LENGTH",
+          "name": "Largo del paquete",
+          "value_id": null,
+          "value_struct": {
+            "number": 31.8,
+            "unit": "cm"
+          },
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros",
+          "value_name": "31.8 cm",
+          "values": [
+            {
+              "id": null,
+              "name": "31.8 cm",
+              "struct": {
+                "number": 31.8,
+                "unit": "cm"
+              },
+              "source": 4333789534002961
+            }
+          ],
+          "source": 4333789534002961
+        },
+        {
+          "source": 4333789534002961,
+          "name": "Peso del paquete",
+          "value_name": "820 g",
+          "value_struct": {
+            "number": 820,
+            "unit": "g"
+          },
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros",
+          "id": "PACKAGE_WEIGHT",
+          "value_id": null,
+          "values": [
+            {
+              "source": 4333789534002961,
+              "id": null,
+              "name": "820 g",
+              "struct": {
+                "number": 820,
+                "unit": "g"
+              }
+            }
+          ]
+        },
+        {
+          "value_name": "0.702 kg",
+          "attribute_group_name": "Otros",
+          "id": "WEIGHT",
+          "name": "Peso",
+          "values": [
+            {
+              "id": null,
+              "name": "0.702 kg",
+              "struct": {
+                "unit": "kg",
+                "number": 0.702
+              },
+              "source": 8200933948529892
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "source": 8200933948529892,
+          "value_id": null,
+          "value_struct": {
+            "number": 0.702,
+            "unit": "kg"
+          }
+        }
+      ],
+      "original_price": null,
+      "category_id": "MLM1166",
+      "official_store_id": 2602,
+      "domain_id": "MLM-STUFFED_TOYS",
+      "catalog_product_id": null,
+      "tags": [
+        "brand_verified",
+        "good_quality_picture",
+        "good_quality_thumbnail",
+        "immediate_payment",
+        "cart_eligible",
+        "shipping_guaranteed",
+        "best_seller_candidate"
+      ],
+      "order_backend": 1,
+      "use_thumbnail_id": true,
+      "offer_score": null,
+      "offer_share": null,
+      "match_score": null,
+      "winner_item_id": null,
+      "melicoin": null,
+      "discounts": null
+    },
+    {
+      "id": "MLM1413353222",
+      "site_id": "MLM",
+      "title": "Figura De Acción Star Wars The Child The Mandalorian Hbx33 De Mattel",
+      "seller": {
+        "id": 101451952,
+        "permalink": null,
+        "registration_date": null,
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": null
+      },
+      "price": 1149,
+      "prices": {
+        "id": "MLM1413353222",
+        "prices": [
+          {
+            "id": "9",
+            "type": "standard",
+            "amount": 1149,
+            "regular_amount": null,
+            "currency_id": "MXN",
+            "last_updated": "2022-05-02T17:03:56Z",
+            "conditions": {
+              "context_restrictions": [],
+              "start_time": null,
+              "end_time": null,
+              "eligible": true
+            },
+            "exchange_rate_context": "DEFAULT",
+            "metadata": {}
+          },
+          {
+            "id": "51",
+            "type": "promotion",
+            "amount": 1091.55,
+            "regular_amount": 1149,
+            "currency_id": "MXN",
+            "last_updated": "2022-08-11T17:22:07Z",
+            "conditions": {
+              "context_restrictions": [
+                "channel_mshops"
+              ],
+              "start_time": "2022-08-11T17:19:48Z",
+              "end_time": "2022-09-19T04:59:59Z",
+              "eligible": true
+            },
+            "exchange_rate_context": "DEFAULT",
+            "metadata": {
+              "promotion_id": "TR-101451952-20220811132003203:MLM1413353222",
+              "promotion_type": "custom"
+            }
+          }
+        ],
+        "presentation": {
+          "display_currency": "MXN"
+        },
+        "payment_method_prices": [],
+        "reference_prices": [
+          {
+            "id": "45",
+            "type": "min_standard",
+            "conditions": {
+              "context_restrictions": [
+                "channel_marketplace"
+              ],
+              "start_time": null,
+              "end_time": null,
+              "eligible": true
+            },
+            "amount": 1149,
+            "currency_id": "MXN",
+            "exchange_rate_context": "DEFAULT",
+            "tags": [],
+            "last_updated": "2022-07-04T05:08:17Z"
+          },
+          {
+            "id": "46",
+            "type": "was",
+            "conditions": {
+              "context_restrictions": [
+                "channel_marketplace"
+              ],
+              "start_time": "2022-07-04T05:08:17Z",
+              "end_time": "2022-07-11T05:08:17Z",
+              "eligible": true
+            },
+            "amount": 896.22,
+            "currency_id": "MXN",
+            "exchange_rate_context": "DEFAULT",
+            "tags": [],
+            "last_updated": "2022-07-04T05:08:17Z"
+          }
+        ],
+        "purchase_discounts": []
+      },
+      "sale_price": null,
+      "currency_id": "MXN",
+      "available_quantity": 1,
+      "sold_quantity": 8,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2042-04-23T04:00:00.000Z",
+      "condition": "new",
+      "permalink": "https://www.mercadolibre.com.mx/figura-de-accion-star-wars-the-child-the-mandalorian-hbx33-de-mattel/p/MLM18949067",
+      "thumbnail": "http://http2.mlstatic.com/D_985761-MLA49189460823_022022-I.jpg",
+      "thumbnail_id": "985761-MLA49189460823_022022",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 12,
+        "amount": 116.65,
+        "rate": 21.83,
+        "currency_id": "MXN"
+      },
+      "address": {
+        "state_id": "MX-DIF",
+        "state_name": "Distrito Federal",
+        "city_id": "TUxNQ0FMVjY3MDg",
+        "city_name": "Alvaro Obregón"
+      },
+      "shipping": {
+        "free_shipping": true,
+        "mode": "me2",
+        "tags": [
+          "fulfillment",
+          "mandatory_free_shipping"
+        ],
+        "logistic_type": "fulfillment",
+        "store_pick_up": false
+      },
+      "seller_address": {
+        "id": "",
+        "comment": "",
+        "address_line": "",
+        "zip_code": "",
+        "country": {
+          "id": "MX",
+          "name": "Mexico"
+        },
+        "state": {
+          "id": "MX-DIF",
+          "name": "Distrito Federal"
+        },
+        "city": {
+          "id": "TUxNQ0FMVjY3MDg",
+          "name": "Alvaro Obregón"
+        },
+        "latitude": "",
+        "longitude": ""
+      },
+      "attributes": [
+        {
+          "id": "ALPHANUMERIC_MODEL",
+          "value_name": "HBX33",
+          "values": [
+            {
+              "name": "HBX33",
+              "struct": null,
+              "source": 1,
+              "id": "11740380"
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "source": 1,
+          "name": "Modelo alfanumérico",
+          "value_id": "11740380",
+          "value_struct": null,
+          "attribute_group_name": "Otros"
+        },
+        {
+          "id": "ITEM_CONDITION",
+          "name": "Condición del ítem",
+          "value_id": "2230284",
+          "values": [
+            {
+              "name": "Nuevo",
+              "struct": null,
+              "source": 6808261514773724,
+              "id": "2230284"
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "source": 6808261514773724,
+          "value_name": "Nuevo",
+          "value_struct": null,
+          "attribute_group_name": "Otros"
+        },
+        {
+          "name": "Línea",
+          "value_id": null,
+          "id": "LINE",
+          "value_name": "The Mandalorian",
+          "value_struct": null,
+          "values": [
+            {
+              "struct": null,
+              "source": 6808261514773724,
+              "id": null,
+              "name": "The Mandalorian"
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros",
+          "source": 6808261514773724
+        },
+        {
+          "value_name": "27.2 cm",
+          "name": "Largo del paquete",
+          "value_id": null,
+          "value_struct": {
+            "number": 27.2,
+            "unit": "cm"
+          },
+          "values": [
+            {
+              "source": 4333789534002961,
+              "id": null,
+              "name": "27.2 cm",
+              "struct": {
+                "number": 27.2,
+                "unit": "cm"
+              }
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros",
+          "source": 4333789534002961,
+          "id": "PACKAGE_LENGTH"
+        },
+        {
+          "name": "Peso del paquete",
+          "value_id": null,
+          "value_name": "820 g",
+          "values": [
+            {
+              "id": null,
+              "name": "820 g",
+              "struct": {
+                "number": 820,
+                "unit": "g"
+              },
+              "source": 4333789534002961
+            }
+          ],
+          "id": "PACKAGE_WEIGHT",
+          "value_struct": {
+            "number": 820,
+            "unit": "g"
+          },
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros",
+          "source": 4333789534002961
+        }
+      ],
+      "original_price": null,
+      "category_id": "MLM37525",
+      "official_store_id": null,
+      "domain_id": "MLM-ACTION_FIGURES",
+      "catalog_product_id": "MLM18949067",
+      "tags": [
+        "good_quality_picture",
+        "good_quality_thumbnail",
+        "immediate_payment",
+        "cart_eligible",
+        "shipping_guaranteed"
+      ],
+      "catalog_listing": true,
+      "use_thumbnail_id": true,
+      "offer_score": null,
+      "offer_share": null,
+      "match_score": null,
+      "winner_item_id": null,
+      "melicoin": null,
+      "discounts": null,
+      "order_backend": 2
+    },
+    {
+      "id": "MLM1463963630",
+      "site_id": "MLM",
+      "title": "Figura De Acción Star Wars The Child Con Galleta The Mandalorian 54531 De Funko Pop!",
+      "seller": {
+        "id": 112898108,
+        "permalink": null,
+        "registration_date": null,
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": null
+      },
+      "price": 397,
+      "prices": {
+        "id": "MLM1463963630",
+        "prices": [
+          {
+            "id": "4",
+            "type": "standard",
+            "amount": 397,
+            "regular_amount": null,
+            "currency_id": "MXN",
+            "last_updated": "2022-07-28T12:05:50Z",
+            "conditions": {
+              "context_restrictions": [],
+              "start_time": null,
+              "end_time": null,
+              "eligible": true
+            },
+            "exchange_rate_context": "DEFAULT",
+            "metadata": {}
+          }
+        ],
+        "presentation": {
+          "display_currency": "MXN"
+        },
+        "payment_method_prices": [],
+        "reference_prices": [
+          {
+            "id": "5",
+            "type": "min_standard",
+            "conditions": {
+              "context_restrictions": [
+                "channel_marketplace"
+              ],
+              "start_time": null,
+              "end_time": null,
+              "eligible": true
+            },
+            "amount": 397,
+            "currency_id": "MXN",
+            "exchange_rate_context": "DEFAULT",
+            "tags": [],
+            "last_updated": "2022-07-28T13:46:26Z"
+          }
+        ],
+        "purchase_discounts": []
+      },
+      "sale_price": null,
+      "currency_id": "MXN",
+      "available_quantity": 4,
+      "sold_quantity": 17,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_pro",
+      "stop_time": "2042-07-16T04:00:00.000Z",
+      "condition": "new",
+      "permalink": "https://www.mercadolibre.com.mx/figura-de-accion-star-wars-the-child-con-galleta-the-mandalorian-54531-de-funko-pop/p/MLM18947496",
+      "thumbnail": "http://http2.mlstatic.com/D_956706-MLA49180495009_022022-I.jpg",
+      "thumbnail_id": "956706-MLA49180495009_022022",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 3,
+        "amount": 132.33,
+        "rate": 0,
+        "currency_id": "MXN"
+      },
+      "address": {
+        "state_id": "MX-MEX",
+        "state_name": "Estado De México",
+        "city_id": "TUxNQ05BVTIwODI",
+        "city_name": "Naucalpan"
+      },
+      "shipping": {
+        "free_shipping": true,
+        "mode": "me2",
+        "tags": [
+          "mandatory_free_shipping"
+        ],
+        "logistic_type": "xd_drop_off",
+        "store_pick_up": false
+      },
+      "seller_address": {
+        "id": "",
+        "comment": "",
+        "address_line": "",
+        "zip_code": "",
+        "country": {
+          "id": "MX",
+          "name": "Mexico"
+        },
+        "state": {
+          "id": "MX-MEX",
+          "name": "Estado De México"
+        },
+        "city": {
+          "id": "TUxNQ05BVTIwODI",
+          "name": "Naucalpan"
+        },
+        "latitude": "",
+        "longitude": ""
+      },
+      "attributes": [
+        {
+          "values": [
+            {
+              "id": "11736678",
+              "name": "54531",
+              "struct": null,
+              "source": 1
+            }
+          ],
+          "attribute_group_name": "Otros",
+          "source": 1,
+          "value_name": "54531",
+          "value_struct": null,
+          "value_id": "11736678",
+          "attribute_group_id": "OTHERS",
+          "id": "ALPHANUMERIC_MODEL",
+          "name": "Modelo alfanumérico"
+        },
+        {
+          "value_id": "2230284",
+          "value_name": "Nuevo",
+          "attribute_group_id": "OTHERS",
+          "source": 6808261514773724,
+          "id": "ITEM_CONDITION",
+          "name": "Condición del ítem",
+          "attribute_group_name": "Otros",
+          "value_struct": null,
+          "values": [
+            {
+              "name": "Nuevo",
+              "struct": null,
+              "source": 6808261514773724,
+              "id": "2230284"
+            }
+          ]
+        },
+        {
+          "name": "Línea",
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros",
+          "source": 1,
+          "id": "LINE",
+          "value_id": "7412054",
+          "value_name": "Pop!",
+          "value_struct": null,
+          "values": [
+            {
+              "id": "7412054",
+              "name": "Pop!",
+              "struct": null,
+              "source": 1
+            }
+          ]
+        }
+      ],
+      "differential_pricing": {
+        "id": 35713375
+      },
+      "original_price": null,
+      "category_id": "MLM37525",
+      "official_store_id": null,
+      "domain_id": "MLM-ACTION_FIGURES",
+      "catalog_product_id": "MLM18947496",
+      "tags": [
+        "good_quality_picture",
+        "immediate_payment",
+        "cart_eligible",
+        "meli_choice_candidate"
+      ],
+      "catalog_listing": true,
+      "use_thumbnail_id": true,
+      "offer_score": null,
+      "offer_share": null,
+      "match_score": null,
+      "winner_item_id": null,
+      "melicoin": null,
+      "discounts": null,
+      "order_backend": 3
+    }
+  ],
+  "sort": {
+    "id": "relevance",
+    "name": "Más relevantes"
+  },
+  "available_sorts": [
+    {
+      "id": "price_asc",
+      "name": "Menor precio"
+    },
+    {
+      "id": "price_desc",
+      "name": "Mayor precio"
+    }
+  ],
+  "filters": [
+    {
+      "id": "category",
+      "name": "Categorías",
+      "type": "text",
+      "values": [
+        {
+          "id": "MLM1132",
+          "name": "Juegos y Juguetes",
+          "path_from_root": [
+            {
+              "id": "MLM1132",
+              "name": "Juegos y Juguetes"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "available_filters": [
+    {
+      "id": "category",
+      "name": "Categorías",
+      "type": "text",
+      "values": [
+        {
+          "id": "MLM187708",
+          "name": "Muñecos y Muñecas",
+          "results": 1251
+        },
+        {
+          "id": "MLM1166",
+          "name": "Peluches",
+          "results": 609
+        },
+        {
+          "id": "MLM455425",
+          "name": "Juegos de Construcción",
+          "results": 122
+        },
+        {
+          "id": "MLM432988",
+          "name": "Juegos de Mesa y Cartas",
+          "results": 66
+        },
+        {
+          "id": "MLM189993",
+          "name": "Juguetes Antiestrés e Ingenio",
+          "results": 44
+        },
+        {
+          "id": "MLM432871",
+          "name": "Vehículos de Juguete",
+          "results": 19
+        },
+        {
+          "id": "MLM2961",
+          "name": "Electrónicos para Niños",
+          "results": 18
+        },
+        {
+          "id": "MLM3655",
+          "name": "Juguetes para Bebés",
+          "results": 18
+        },
+        {
+          "id": "MLM418348",
+          "name": "Arte y Manualidades",
+          "results": 15
+        },
+        {
+          "id": "MLM191696",
+          "name": "Juguetes de Bromas",
+          "results": 12
+        },
+        {
+          "id": "MLM433047",
+          "name": "Títeres y Marionetas",
+          "results": 7
+        },
+        {
+          "id": "MLM10811",
+          "name": "Montables para Niños",
+          "results": 5
+        },
+        {
+          "id": "MLM432873",
+          "name": "Hobbies",
+          "results": 3
+        },
+        {
+          "id": "MLM189320",
+          "name": "Mesas y Sillas",
+          "results": 3
+        },
+        {
+          "id": "MLM438116",
+          "name": "Estampas, Álbumes y Cromos",
+          "results": 1
+        },
+        {
+          "id": "MLM189879",
+          "name": "Patines y Patinetas",
+          "results": 1
+        },
+        {
+          "id": "MLM1910",
+          "name": "Otros",
+          "results": 74
+        }
+      ]
+    },
+    {
+      "id": "official_store",
+      "name": "Tiendas oficiales",
+      "type": "text",
+      "values": [
+        {
+          "id": "all",
+          "name": "Todas las tiendas oficiales",
+          "results": 63
+        },
+        {
+          "id": "4332",
+          "name": "Cracken Shop",
+          "results": 8
+        },
+        {
+          "id": "4016",
+          "name": "Run4 Collectibles",
+          "results": 7
+        },
+        {
+          "id": "1454",
+          "name": "Lego",
+          "results": 3
+        },
+        {
+          "id": "2293",
+          "name": "Yelio",
+          "results": 3
+        },
+        {
+          "id": "348",
+          "name": "Funko",
+          "results": 3
+        },
+        {
+          "id": "715",
+          "name": "Hasbro",
+          "results": 3
+        },
+        {
+          "id": "1158",
+          "name": "Ruz",
+          "results": 2
+        },
+        {
+          "id": "2690",
+          "name": "Punta Belleza",
+          "results": 2
+        },
+        {
+          "id": "3415",
+          "name": "Todo lo Encuentro en CDMX",
+          "results": 2
+        },
+        {
+          "id": "2602",
+          "name": "Mattel",
+          "results": 1
+        }
+      ]
+    },
+    {
+      "id": "discount",
+      "name": "Descuentos",
+      "type": "number",
+      "values": [
+        {
+          "id": "5-100",
+          "name": "Desde 5% OFF",
+          "results": 158
+        },
+        {
+          "id": "10-100",
+          "name": "Desde 10% OFF",
+          "results": 75
+        },
+        {
+          "id": "15-100",
+          "name": "Desde 15% OFF",
+          "results": 56
+        },
+        {
+          "id": "20-100",
+          "name": "Desde 20% OFF",
+          "results": 38
+        },
+        {
+          "id": "25-100",
+          "name": "Desde 25% OFF",
+          "results": 28
+        },
+        {
+          "id": "30-100",
+          "name": "Desde 30% OFF",
+          "results": 18
+        },
+        {
+          "id": "40-100",
+          "name": "Desde 40% OFF",
+          "results": 5
+        },
+        {
+          "id": "50-100",
+          "name": "Desde 50% OFF",
+          "results": 3
+        },
+        {
+          "id": "70-100",
+          "name": "Desde 70% OFF",
+          "results": 1
+        }
+      ]
+    },
+    {
+      "id": "state",
+      "name": "Ubicación",
+      "type": "text",
+      "values": [
+        {
+          "id": "TUxNUERJUzYwOTQ",
+          "name": "Distrito Federal",
+          "results": 629
+        },
+        {
+          "id": "TUxNUEVTVDMzMzc",
+          "name": "Estado De México",
+          "results": 400
+        },
+        {
+          "id": "TUxNUEpBTDM3MTg",
+          "name": "Jalisco",
+          "results": 162
+        },
+        {
+          "id": "TUxNUEJBSjc0NzU",
+          "name": "Baja California",
+          "results": 114
+        },
+        {
+          "id": "TUxNUFBVRTQ4ODM",
+          "name": "Puebla",
+          "results": 102
+        },
+        {
+          "id": "TUxNUE5VRTEzNTU",
+          "name": "Nuevo León",
+          "results": 98
+        },
+        {
+          "id": "TUxNUFNPTjgwMjI",
+          "name": "Sonora",
+          "results": 88
+        },
+        {
+          "id": "TUxNUFRBTTYwMjc",
+          "name": "Tamaulipas",
+          "results": 76
+        },
+        {
+          "id": "TUxNUFZFUjk2Mjg",
+          "name": "Veracruz",
+          "results": 62
+        },
+        {
+          "id": "TUxNUENISTgwNDc",
+          "name": "Chihuahua",
+          "results": 48
+        },
+        {
+          "id": "TUxNUEFHVTMwNjE",
+          "name": "Aguascalientes",
+          "results": 38
+        },
+        {
+          "id": "TUxNUE1JQzg2Nzc",
+          "name": "Michoacán",
+          "results": 32
+        },
+        {
+          "id": "TUxNUFFVRTc3ODg",
+          "name": "Querétaro",
+          "results": 32
+        },
+        {
+          "id": "TUxNUEdVQTgzNzk",
+          "name": "Guanajuato",
+          "results": 30
+        },
+        {
+          "id": "TUxNUE1PUjI4Njk",
+          "name": "Morelos",
+          "results": 25
+        },
+        {
+          "id": "TUxNUFNJTjU3NzY",
+          "name": "Sinaloa",
+          "results": 19
+        },
+        {
+          "id": "TUxNUFlVQzc1OTk",
+          "name": "Yucatán",
+          "results": 19
+        },
+        {
+          "id": "TUxNUENBTTY3NjU",
+          "name": "Campeche",
+          "results": 16
+        },
+        {
+          "id": "TUxNUEhJRDM3MzU",
+          "name": "Hidalgo",
+          "results": 15
+        },
+        {
+          "id": "TUxNUFNBTjk2ODI",
+          "name": "San Luis Potosí",
+          "results": 13
+        },
+        {
+          "id": "TUxNUE9BWDUzNzE",
+          "name": "Oaxaca",
+          "results": 12
+        },
+        {
+          "id": "TUxNUFFVSTcyNjE",
+          "name": "Quintana Roo",
+          "results": 12
+        },
+        {
+          "id": "TUxNUEdVRTM0NTA",
+          "name": "Guerrero",
+          "results": 10
+        },
+        {
+          "id": "TUxNUENISTM5NjI",
+          "name": "Chiapas",
+          "results": 9
+        },
+        {
+          "id": "TUxNUE5BWTMzOTg",
+          "name": "Nayarit",
+          "results": 7
+        },
+        {
+          "id": "TUxNUENPQTgwMzE",
+          "name": "Coahuila",
+          "results": 7
+        },
+        {
+          "id": "TUxNUFpBQzYxMTk",
+          "name": "Zacatecas",
+          "results": 7
+        },
+        {
+          "id": "TUxNUENPTDQzNTc",
+          "name": "Colima",
+          "results": 5
+        },
+        {
+          "id": "TUxNUFRMQTY5ODY",
+          "name": "Tlaxcala",
+          "results": 5
+        },
+        {
+          "id": "TUxNUFRBQjQwNTc",
+          "name": "Tabasco",
+          "results": 3
+        },
+        {
+          "id": "TUxNUEJBSjI3NTY",
+          "name": "Baja California Sur",
+          "results": 1
+        }
+      ]
+    },
+    {
+      "id": "price",
+      "name": "Precio",
+      "type": "range",
+      "values": [
+        {
+          "id": "*-450.0",
+          "name": "Hasta $450",
+          "results": 625
+        },
+        {
+          "id": "450.0-1000.0",
+          "name": "$450 a $1,000",
+          "results": 861
+        },
+        {
+          "id": "1000.0-*",
+          "name": "Más de $1,000",
+          "results": 755
+        }
+      ]
+    },
+    {
+      "id": "accepts_mercadopago",
+      "name": "Filtro por MercadoPago",
+      "type": "boolean",
+      "values": [
+        {
+          "id": "yes",
+          "name": "Con MercadoPago",
+          "results": 2241
+        }
+      ]
+    },
+    {
+      "id": "installments",
+      "name": "Pago",
+      "type": "text",
+      "values": [
+        {
+          "id": "yes",
+          "name": "En mensualidades",
+          "results": 2241
+        },
+        {
+          "id": "no_interest",
+          "name": "Meses sin intereses",
+          "results": 881
+        }
+      ]
+    },
+    {
+      "id": "shipping",
+      "name": "Tipo de envío",
+      "type": "text",
+      "values": [
+        {
+          "id": "mercadoenvios",
+          "name": "Mercado Envíos",
+          "results": 2240
+        },
+        {
+          "id": "fulfillment",
+          "name": "Full",
+          "results": 142
+        }
+      ]
+    },
+    {
+      "id": "power_seller",
+      "name": "Filtro por calidad de vendedores",
+      "type": "boolean",
+      "values": [
+        {
+          "id": "yes",
+          "name": "Mejores vendedores",
+          "results": 971
+        }
+      ]
+    },
+    {
+      "id": "since",
+      "name": "Filtro por fecha de comienzo",
+      "type": "text",
+      "values": [
+        {
+          "id": "today",
+          "name": "Publicados hoy",
+          "results": 4
+        }
+      ]
+    },
+    {
+      "id": "has_video",
+      "name": "Filtro por publicaciones con video",
+      "type": "boolean",
+      "values": [
+        {
+          "id": "yes",
+          "name": "Publicaciones con video",
+          "results": 157
+        }
+      ]
+    },
+    {
+      "id": "has_pictures",
+      "name": "Filtro por publicaciones con imágenes",
+      "type": "boolean",
+      "values": [
+        {
+          "id": "yes",
+          "name": "Con fotos",
+          "results": 2241
+        }
+      ]
+    },
+    {
+      "id": "price_campaign_id",
+      "name": "Campaña",
+      "type": "number",
+      "values": [
+        {
+          "id": "MLM20635",
+          "name": "MLM20635",
+          "results": 8
+        },
+        {
+          "id": "MLM21301",
+          "name": "MLM21301",
+          "results": 5
+        },
+        {
+          "id": "MLM4173",
+          "name": "MLM4173",
+          "results": 4
+        },
+        {
+          "id": "MLM20683",
+          "name": "MLM20683",
+          "results": 2
+        },
+        {
+          "id": "MLM4174",
+          "name": "MLM4174",
+          "results": 1
+        }
+      ]
+    },
+    {
+      "id": "promotion_type",
+      "name": "Tipo de promoción",
+      "type": "text",
+      "values": [
+        {
+          "id": "deal_of_the_day",
+          "name": "Oferta del día",
+          "results": 4
+        }
+      ]
+    },
+    {
+      "id": "shipping_cost",
+      "name": "Costo de envío",
+      "type": "text",
+      "values": [
+        {
+          "id": "free",
+          "name": "Gratis",
+          "results": 1719
+        }
+      ]
+    },
+    {
+      "id": "ITEM_CONDITION",
+      "name": "Condición",
+      "type": "STRING",
+      "values": [
+        {
+          "id": "2230284",
+          "name": "Nuevo",
+          "results": 1778
+        },
+        {
+          "id": "2230581",
+          "name": "Usado",
+          "results": 458
+        },
+        {
+          "id": "2230582",
+          "name": "Reacondicionado",
+          "results": 5
+        }
+      ]
+    },
+    {
+      "id": "MIN_RECOMMENDED_AGE",
+      "name": "Edad mínima recomendada",
+      "type": "range",
+      "values": [
+        {
+          "id": "(*-4años)",
+          "name": "Menos de 4 años",
+          "results": 690
+        },
+        {
+          "id": "[4años-5años)",
+          "name": "4 años",
+          "results": 243
+        },
+        {
+          "id": "[5años-7años)",
+          "name": "5 a 6 años",
+          "results": 224
+        },
+        {
+          "id": "[7años-10años)",
+          "name": "7 a 9 años",
+          "results": 115
+        },
+        {
+          "id": "[10años-*)",
+          "name": "10 años o más",
+          "results": 106
+        }
+      ]
+    },
+    {
+      "id": "SHIPPING_ORIGIN",
+      "name": "Tipo de compra",
+      "type": "STRING",
+      "values": [
+        {
+          "id": "10215068",
+          "name": "Local",
+          "results": 2122
+        },
+        {
+          "id": "10215069",
+          "name": "Internacional",
+          "results": 119
+        }
+      ]
+    }
+  ]
+}
