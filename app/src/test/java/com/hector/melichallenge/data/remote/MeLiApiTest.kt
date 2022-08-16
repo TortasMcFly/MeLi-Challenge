@@ -9,6 +9,7 @@ import kotlinx.coroutines.runBlocking
 import okhttp3.OkHttpClient
 import okhttp3.mockwebserver.MockResponse
 import okhttp3.mockwebserver.MockWebServer
+import org.junit.After
 import org.junit.Assert.*
 import org.junit.Before
 import org.junit.Rule
@@ -142,5 +143,10 @@ class MeLiApiTest {
             assertEquals(400, httpException.code())
 
         }
+    }
+
+    @After
+    fun tearDown() {
+        server.shutdown()
     }
 }
