@@ -5,6 +5,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.hector.melichallenge.domain.model.Product
 import com.hector.melichallenge.domain.use_case.SearchProductUseCase
+import com.hector.melichallenge.domain.util.ErrorMessage
 import com.hector.melichallenge.domain.util.onError
 import com.hector.melichallenge.domain.util.onLoading
 import com.hector.melichallenge.domain.util.onSuccess
@@ -34,7 +35,7 @@ class ProductsViewModel @Inject constructor(
         onEvent(ProductsEvent.SearchProduct(query, 0))
     }
 
-    private fun onEvent(event: ProductsEvent) {
+    fun onEvent(event: ProductsEvent) {
         when(event) {
             is ProductsEvent.SearchProduct -> {
                 searchProduct(event.query, event.offset)
@@ -62,7 +63,7 @@ class ProductsViewModel @Inject constructor(
                         loading = false
                     )
                     _eventFlow.emit(
-                        UIEvent.ShowError(it ?: "An error occurred")
+                        UIEvent.ShowError(it ?: ErrorMessage())
                     )
                 }
         }.launchIn(this)
@@ -70,7 +71,7 @@ class ProductsViewModel @Inject constructor(
     }
 
     sealed class UIEvent {
-        data class ShowError(val message: String): UIEvent()
+        data class ShowError(val error: ErrorMessage): UIEvent()
     }
 
 }

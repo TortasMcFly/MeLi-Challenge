@@ -5,6 +5,7 @@ import com.hector.melichallenge.data.remote.dto.toDomain
 import com.hector.melichallenge.domain.model.Product
 import com.hector.melichallenge.domain.model.SearchDetail
 import com.hector.melichallenge.domain.repository.ProductRepository
+import com.hector.melichallenge.domain.util.ErrorMessage
 import com.hector.melichallenge.domain.util.Resource
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
@@ -33,10 +34,16 @@ class ProductRepositoryImpl(
 
         }
         catch (httpException: HttpException) {
-            emit(Resource.Error(message = httpException.message()))
+            emit(Resource.Error(ErrorMessage(
+                message = httpException.message(),
+                type = ErrorMessage.ErrorType.HTTP
+            )))
         }
         catch (ioException: IOException) {
-            emit(Resource.Error(message = ioException.message ?: "Cannot contact the server"))
+            emit(Resource.Error(ErrorMessage(
+                message = ioException.message ?: "Cannot contact the server",
+                type = ErrorMessage.ErrorType.IO
+            )))
         }
 
     }
@@ -55,10 +62,16 @@ class ProductRepositoryImpl(
             emit(Resource.Success(product.body.toDomain()))
         }
         catch (httpException: HttpException) {
-            emit(Resource.Error(message = httpException.message()))
+            emit(Resource.Error(ErrorMessage(
+                message = httpException.message(),
+                type = ErrorMessage.ErrorType.HTTP
+            )))
         }
         catch (ioException: IOException) {
-            emit(Resource.Error(message = ioException.message ?: "Cannot contact the server"))
+            emit(Resource.Error(ErrorMessage(
+                message = ioException.message ?: "Cannot contact the server",
+                type = ErrorMessage.ErrorType.IO
+            )))
         }
     }
 

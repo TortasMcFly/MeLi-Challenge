@@ -15,6 +15,7 @@ import com.google.android.material.snackbar.Snackbar
 import com.hector.melichallenge.R
 import com.hector.melichallenge.databinding.FragmentProductsBinding
 import com.hector.melichallenge.domain.model.Product
+import com.hector.melichallenge.domain.util.ErrorMessage
 import com.hector.melichallenge.presentation.products.adapter.ProductAdapter
 import com.hector.melichallenge.presentation.utils.Constants
 import dagger.hilt.android.AndroidEntryPoint
@@ -59,6 +60,7 @@ class ProductsFragment : Fragment() {
 
             binding.textViewTotalResults.text = "${state.searchDetail?.getTotal() ?: 0} resultados"
             binding.viewSearch.searchView.setQuery(state.query, false)
+            binding.viewNoResults.root.isVisible = products.isEmpty() && !state.loading
         }
 
     }
@@ -68,7 +70,11 @@ class ProductsFragment : Fragment() {
         viewModel.eventFlow.collectLatest { event ->
             when(event) {
                 is ProductsViewModel.UIEvent.ShowError -> {
-                    Snackbar.make(binding.root, event.message, Snackbar.LENGTH_SHORT).show()
+                    if(event.error.type == ErrorMessage.ErrorType.IO) {
+                        binding.viewNoInternet.root.isVisible = true
+                        return@collectLatest
+                    }
+                    Snackbar.make(binding.root, event.error.message, Snackbar.LENGTH_SHORT).show()
                 }
             }
         }
@@ -105,6 +111,12 @@ class ProductsFragment : Fragment() {
         binding.viewSearch.backAction.isVisible = true
         binding.viewSearch.backAction.setOnClickListener {
             navController.popBackStack()
+        }
+        
+        binding.viewNoInternet.buttonRetry.setOnClickListener {
+            val query = binding.viewSearch.searchView.query.toString()
+            binding.viewNoInternet.root.isVisible = false
+            viewModel.onEvent(ProductsEvent.SearchProduct(query, 0))
         }
     }
 }
