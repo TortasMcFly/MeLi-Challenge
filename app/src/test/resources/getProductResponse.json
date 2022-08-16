@@ -1,0 +1,373 @@
+[
+  {
+    "code": 200,
+    "body": {
+      "id": "MLM1456343123",
+      "site_id": "MLM",
+      "title": "Figura De Acción Star Wars The Child Animatronic Edition F1119 De Hasbro",
+      "subtitle": null,
+      "seller_id": 1122856377,
+      "category_id": "MLM37525",
+      "official_store_id": null,
+      "price": 1546,
+      "base_price": 1546,
+      "original_price": null,
+      "currency_id": "MXN",
+      "initial_quantity": 24,
+      "available_quantity": 1,
+      "sold_quantity": 5,
+      "sale_terms": [
+        {
+          "id": "WARRANTY_TIME",
+          "name": "Tiempo de garantía",
+          "value_id": null,
+          "value_name": "1 meses",
+          "value_struct": {
+            "number": 1,
+            "unit": "meses"
+          },
+          "values": [
+            {
+              "id": null,
+              "name": "1 meses",
+              "struct": {
+                "number": 1,
+                "unit": "meses"
+              }
+            }
+          ]
+        },
+        {
+          "id": "WARRANTY_TYPE",
+          "name": "Tipo de garantía",
+          "value_id": "2230280",
+          "value_name": "Garantía del vendedor",
+          "value_struct": null,
+          "values": [
+            {
+              "id": "2230280",
+              "name": "Garantía del vendedor",
+              "struct": null
+            }
+          ]
+        }
+      ],
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "start_time": "2022-07-10T07:30:49.000Z",
+      "stop_time": "2042-07-05T04:00:00.000Z",
+      "condition": "new",
+      "permalink": "https://articulo.mercadolibre.com.mx/MLM-1456343123-figura-de-accion-star-wars-the-child-animatronic-edition-f1119-de-hasbro-_JM",
+      "thumbnail_id": "688119-MLA48342810029_112021",
+      "thumbnail": "http://http2.mlstatic.com/D_688119-MLA48342810029_112021-I.jpg",
+      "secure_thumbnail": "https://http2.mlstatic.com/D_688119-MLA48342810029_112021-I.jpg",
+      "pictures": [
+        {
+          "id": "688119-MLA48342810029_112021",
+          "url": "http://http2.mlstatic.com/D_688119-MLA48342810029_112021-O.jpg",
+          "secure_url": "https://http2.mlstatic.com/D_688119-MLA48342810029_112021-O.jpg",
+          "size": "500x441",
+          "max_size": "723x638",
+          "quality": ""
+        },
+        {
+          "id": "995239-MLA48342795097_112021",
+          "url": "http://http2.mlstatic.com/D_995239-MLA48342795097_112021-O.jpg",
+          "secure_url": "https://http2.mlstatic.com/D_995239-MLA48342795097_112021-O.jpg",
+          "size": "485x500",
+          "max_size": "958x986",
+          "quality": ""
+        }
+      ],
+      "video_id": null,
+      "descriptions": [],
+      "accepts_mercadopago": true,
+      "non_mercado_pago_payment_methods": [],
+      "shipping": {
+        "mode": "me2",
+        "methods": [],
+        "tags": [
+          "mandatory_free_shipping"
+        ],
+        "dimensions": null,
+        "local_pick_up": false,
+        "free_shipping": true,
+        "logistic_type": "xd_drop_off",
+        "store_pick_up": false
+      },
+      "international_delivery_mode": "none",
+      "seller_address": {
+        "city": {
+          "id": "TUxNQ0xF0zY0NDk",
+          "name": "León"
+        },
+        "state": {
+          "id": "MX-GUA",
+          "name": "Guanajuato"
+        },
+        "country": {
+          "id": "MX",
+          "name": "Mexico"
+        },
+        "search_location": {
+          "neighborhood": {
+            "id": "TUxNQkFaVDQzNzg",
+            "name": "Aztecas"
+          },
+          "city": {
+            "id": "TUxNQ0xF0zY0NDk",
+            "name": "León"
+          },
+          "state": {
+            "id": "TUxNUEdVQTgzNzk",
+            "name": "Guanajuato"
+          }
+        },
+        "id": 1233663865
+      },
+      "seller_contact": null,
+      "location": {},
+      "coverage_areas": [],
+      "attributes": [
+        {
+          "id": "COLLECTION",
+          "name": "Colección",
+          "value_id": "447715",
+          "value_name": "Star Wars",
+          "value_struct": null,
+          "values": [
+            {
+              "id": "447715",
+              "name": "Star Wars",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "",
+          "attribute_group_name": ""
+        },
+        {
+          "id": "ACCESSORIES_INCLUDED",
+          "name": "Accesorios incluidos",
+          "value_id": "11324659",
+          "value_name": "Collar mandaloriano",
+          "value_struct": null,
+          "values": [
+            {
+              "id": "11324659",
+              "name": "Collar mandaloriano",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros"
+        },
+        {
+          "id": "ALPHANUMERIC_MODEL",
+          "name": "Modelo alfanumérico",
+          "value_id": "11459572",
+          "value_name": "F1119",
+          "value_struct": null,
+          "values": [
+            {
+              "id": "11459572",
+              "name": "F1119",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros"
+        },
+        {
+          "id": "CELL_BATTERY_SIZE",
+          "name": "Tamaño de la pila",
+          "value_id": "6073399",
+          "value_name": "AAA",
+          "value_struct": null,
+          "values": [
+            {
+              "id": "6073399",
+              "name": "AAA",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros"
+        },
+        {
+          "id": "CHARACTER",
+          "name": "Personaje",
+          "value_id": "11324656",
+          "value_name": "The Child",
+          "value_struct": null,
+          "values": [
+            {
+              "id": "11324656",
+              "name": "The Child",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros"
+        },
+        {
+          "id": "CHARACTER_VERSION",
+          "name": "Versión del personaje",
+          "value_id": "11324657",
+          "value_name": "Animatronic Edition",
+          "value_struct": null,
+          "values": [
+            {
+              "id": "11324657",
+              "name": "Animatronic Edition",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros"
+        },
+        {
+          "id": "INCLUDES_ACCESSORIES",
+          "name": "Incluye accesorios",
+          "value_id": "242085",
+          "value_name": "Sí",
+          "value_struct": null,
+          "values": [
+            {
+              "id": "242085",
+              "name": "Sí",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros"
+        },
+        {
+          "id": "INCLUDES_CELL_BATTERIES",
+          "name": "Incluye pilas",
+          "value_id": "242085",
+          "value_name": "Sí",
+          "value_struct": null,
+          "values": [
+            {
+              "id": "242085",
+              "name": "Sí",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros"
+        },
+        {
+          "id": "ITEM_CONDITION",
+          "name": "Condición del ítem",
+          "value_id": "2230284",
+          "value_name": "Nuevo",
+          "value_struct": null,
+          "values": [
+            {
+              "id": "2230284",
+              "name": "Nuevo",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros"
+        },
+        {
+          "id": "MANUFACTURER",
+          "name": "Fabricante",
+          "value_id": "1006823",
+          "value_name": "Hasbro",
+          "value_struct": null,
+          "values": [
+            {
+              "id": "1006823",
+              "name": "Hasbro",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros"
+        },
+        {
+          "id": "MIN_RECOMMENDED_AGE",
+          "name": "Edad mínima recomendada",
+          "value_id": "1259747",
+          "value_name": "4 años",
+          "value_struct": {
+            "number": 4,
+            "unit": "años"
+          },
+          "values": [
+            {
+              "id": "1259747",
+              "name": "4 años",
+              "struct": {
+                "number": 4,
+                "unit": "años"
+              }
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros"
+        },
+        {
+          "id": "MPN",
+          "name": "MPN",
+          "value_id": "11324658",
+          "value_name": "F1119",
+          "value_struct": null,
+          "values": [
+            {
+              "id": "11324658",
+              "name": "F1119",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros"
+        },
+        {
+          "id": "WITH_SOUND",
+          "name": "Con sonido",
+          "value_id": "242085",
+          "value_name": "Sí",
+          "value_struct": null,
+          "values": [
+            {
+              "id": "242085",
+              "name": "Sí",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros"
+        }
+      ],
+      "warnings": [],
+      "listing_source": "",
+      "variations": [],
+      "status": "active",
+      "sub_status": [],
+      "tags": [
+        "good_quality_picture",
+        "immediate_payment",
+        "cart_eligible"
+      ],
+      "warranty": "Garantía del vendedor: 1 meses",
+      "catalog_product_id": "MLM18601893",
+      "domain_id": "MLM-ACTION_FIGURES",
+      "parent_item_id": null,
+      "differential_pricing": null,
+      "deal_ids": [],
+      "automatic_relist": false,
+      "date_created": "2022-07-10T07:30:49.000Z",
+      "last_updated": "2022-08-16T21:03:44.000Z",
+      "health": null,
+      "catalog_listing": true,
+      "channels": [
+        "marketplace"
+      ]
+    }
+  }
+]
