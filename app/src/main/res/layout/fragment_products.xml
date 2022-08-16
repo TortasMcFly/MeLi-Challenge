@@ -14,9 +14,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/viewSearch"
-        android:padding="10dp"
-        android:elevation="1dp"
         android:background="@color/white"
+        android:elevation="1dp"
+        android:padding="10dp"
         android:text="0 resultados"
         android:textColor="@color/black"
         android:textSize="@dimen/medium_text" />
@@ -37,5 +37,21 @@
         android:indeterminate="true"
         android:indeterminateTintMode="src_atop"
         android:indeterminateTint="@color/colorPrimary"/>
+
+    <include
+        android:id="@+id/viewNoResults"
+        layout="@layout/view_no_results"
+        android:visibility="gone"
+        android:layout_below="@+id/viewSearch"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <include
+        android:id="@+id/viewNoInternet"
+        layout="@layout/view_no_internet"
+        android:visibility="gone"
+        android:layout_below="@+id/viewSearch"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
 
 </RelativeLayout>

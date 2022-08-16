@@ -4,6 +4,7 @@ import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.hector.melichallenge.domain.use_case.GetProductDetailUseCase
+import com.hector.melichallenge.domain.util.ErrorMessage
 import com.hector.melichallenge.domain.util.onError
 import com.hector.melichallenge.domain.util.onLoading
 import com.hector.melichallenge.domain.util.onSuccess
@@ -56,7 +57,7 @@ class ProductDetailViewModel @Inject constructor(
                    _state.value = state.value.copy(
                        loading = false
                    )
-                   _eventFlow.emit(UIEvent.ShowError(it ?: "An error occurred"))
+                   _eventFlow.emit(UIEvent.ShowError(it ?: ErrorMessage()))
                }
 
         }.launchIn(this)
@@ -64,7 +65,7 @@ class ProductDetailViewModel @Inject constructor(
     }
 
     sealed class UIEvent {
-        data class ShowError(val message: String): UIEvent()
+        data class ShowError(val error: ErrorMessage): UIEvent()
     }
 
 }

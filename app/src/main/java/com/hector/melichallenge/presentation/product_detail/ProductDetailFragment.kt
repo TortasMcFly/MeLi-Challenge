@@ -15,6 +15,7 @@ import com.google.android.material.snackbar.Snackbar
 import com.hector.melichallenge.R
 import com.hector.melichallenge.databinding.FragmentProductDetailBinding
 import com.hector.melichallenge.domain.model.ProductPicture
+import com.hector.melichallenge.domain.util.ErrorMessage
 import com.hector.melichallenge.presentation.product_detail.adapter.ImageViewPagerAdapter
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collectLatest
@@ -72,7 +73,11 @@ class ProductDetailFragment : Fragment() {
 
             when(event) {
                 is ProductDetailViewModel.UIEvent.ShowError -> {
-                    Snackbar.make(binding.root, event.message, Snackbar.LENGTH_SHORT).show()
+                    if(event.error.type == ErrorMessage.ErrorType.IO) {
+                        Snackbar.make(binding.root, getString(R.string.text_label_no_internet), Snackbar.LENGTH_LONG).show()
+                        return@collectLatest
+                    }
+                    Snackbar.make(binding.root, event.error.message, Snackbar.LENGTH_SHORT).show()
                 }
             }
         }

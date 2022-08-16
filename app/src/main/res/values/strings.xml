@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name" translatable="false">MeLiChallenge</string>
-    <string name="text_label_search_hint">Search in Mercado Libre</string>
+    <string name="text_label_search_hint">Buscar con Mercado Libre</string>
+    <string name="text_label_no_internet">¡Parece que no hay internet!</string>
+    <string name="text_label_check_your_connection">Revisa tu conexión a internet para seguir navegando</string>
+    <string name="text_label_no_results">No encontramos publicaciones</string>
+    <string name="text_label_no_results_advice">Revisa que la palabra este bien escrita. También puedes probar con menos términos o más generales.</string>
+    <string name="text_label_connection_restore">Se restableció la conexión</string>
+    <string name="text_button_retry">Reintentar</string>
 </resources>
