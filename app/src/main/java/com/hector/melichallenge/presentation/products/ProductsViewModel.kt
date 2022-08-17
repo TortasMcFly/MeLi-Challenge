@@ -18,7 +18,7 @@ import javax.inject.Inject
 @HiltViewModel
 class ProductsViewModel @Inject constructor(
     private val searchProductUseCase: SearchProductUseCase,
-    private val stateHandle: SavedStateHandle
+    stateHandle: SavedStateHandle
 ): ViewModel() {
 
     private val _state = MutableStateFlow(ProductsState())
