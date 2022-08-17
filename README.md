@@ -19,6 +19,7 @@ El objetivo es desarrollar una app utilizando las APIs de Mercado Libre que le p
 ## 📋 Pre-requisitos
 
 -   Android Studio 4.0+
+-   Android SDK Build-Tools 33+
 -   Target SDK (32)
 
 
