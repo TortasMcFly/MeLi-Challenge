@@ -42,6 +42,11 @@ El proyecto esta basado en una arquitectura limpia siguiendo los guidelines de l
 
 
 
+## 🚀  Tests
+
+Los tests los puedes encontrar [aquí](https://github.com/TortasMcFly/MeLi-Challenge/tree/main/app/src/test/java/com/hector/melichallenge).
+
+
 ## 🆘 Support
 
  
