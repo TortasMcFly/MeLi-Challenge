@@ -25,7 +25,8 @@ import kotlinx.coroutines.flow.collectLatest
 class ProductsFragment : Fragment() {
 
     private val viewModel: ProductsViewModel by viewModels()
-    private lateinit var binding: FragmentProductsBinding
+    private var _binding: FragmentProductsBinding? = null
+    private val binding get() = _binding!!
     private lateinit var navController: NavController
     private var products: MutableList<Product> = mutableListOf()
 
@@ -33,7 +34,7 @@ class ProductsFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        binding = FragmentProductsBinding.inflate(inflater)
+        _binding = FragmentProductsBinding.inflate(inflater)
         navController = findNavController()
 
         setUpStateFlow()
@@ -118,5 +119,10 @@ class ProductsFragment : Fragment() {
             binding.viewNoInternet.root.isVisible = false
             viewModel.onEvent(ProductsEvent.SearchProduct(query, 0))
         }
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
 }

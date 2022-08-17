@@ -25,14 +25,15 @@ class ProductDetailFragment : Fragment() {
 
     private val viewModel: ProductDetailViewModel by viewModels()
 
-    private lateinit var binding: FragmentProductDetailBinding
+    private var _binding: FragmentProductDetailBinding? = null
+    private val binding get() = _binding!!
     private lateinit var navController: NavController
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        binding = FragmentProductDetailBinding.inflate(inflater)
+        _binding = FragmentProductDetailBinding.inflate(inflater)
         navController = findNavController()
 
 
@@ -109,5 +110,10 @@ class ProductDetailFragment : Fragment() {
         binding.viewSearch.backAction.setOnClickListener {
             navController.popBackStack()
         }
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
 }
