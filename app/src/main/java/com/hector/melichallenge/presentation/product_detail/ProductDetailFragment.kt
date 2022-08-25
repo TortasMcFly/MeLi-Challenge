@@ -45,7 +45,7 @@ class ProductDetailFragment : Fragment() {
         return binding.root
     }
 
-    private fun setUpStateFlow() = lifecycleScope.launchWhenStarted {
+    private fun setUpStateFlow() = viewLifecycleOwner.lifecycleScope.launchWhenStarted {
         viewModel.state.collectLatest { state ->
 
             binding.content.isVisible = !state.loading
@@ -69,7 +69,7 @@ class ProductDetailFragment : Fragment() {
         }
     }
 
-    private fun setUpEventFlow() = lifecycleScope.launchWhenStarted {
+    private fun setUpEventFlow() = viewLifecycleOwner.lifecycleScope.launchWhenStarted {
         viewModel.eventFlow.collectLatest { event ->
 
             when(event) {
